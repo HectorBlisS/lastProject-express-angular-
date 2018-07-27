@@ -1,6 +1,9 @@
 const express = require('express')
 const router = express.Router()
 const Phone = require('../models/Phone')
+//archivos
+const multer = require('multer')
+const uploads = multer({dest: './public/images'})
 
 //RESTful API
 
@@ -16,7 +19,8 @@ router.get('/', (req, res) => {
 });
 
 //post new phone
-router.post('/',  (req, res) => {
+router.post('/',  uploads.single('image'), (req, res) => {
+    if(req.file) req.body.image = 'http://localhost:3000/images/' + req.file.filename
     Phone.create(req.body)
         .then(phone => {
             return res.status(201).json(phone)
