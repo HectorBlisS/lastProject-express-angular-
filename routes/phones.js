@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 
 //post new phone
 router.post('/',  uploads.single('image'), (req, res) => {
-    if(req.file) req.body.image = 'http://localhost:3000/images/' + req.file.filename
+    if(req.file) req.body.image = '/images/' + req.file.filename
     Phone.create(req.body)
         .then(phone => {
             return res.status(201).json(phone)
