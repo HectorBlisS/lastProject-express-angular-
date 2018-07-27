@@ -1,0 +1,20 @@
+[
+	{
+		"name": "P20 Black",
+		"brand": "Huawei",
+		"image": "https://user-images.githubusercontent.com/23629340/39690355-16ea1510-51da-11e8-9568-a62ad012a97f.jpg",
+		"specs": ["1080p Display", "2GB RAM"]
+	},
+	{
+		"name": "iPhone X",
+		"brand": "Apple",
+		"image": "https://user-images.githubusercontent.com/23629340/39690363-232c4550-51da-11e8-9a53-25f8087b4377.jpg",
+		"specs": ["4.87 ounces", "12MP camera"]
+	},
+	{
+		"name": "G7 ThinQ",
+		"brand": "LG",
+		"image": "https://user-images.githubusercontent.com/23629340/39690372-2aecb388-51da-11e8-9b5f-25702e69c840.jpg",
+		"specs": ["16GB Storage"]
+	}
+]
