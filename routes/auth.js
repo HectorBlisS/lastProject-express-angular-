@@ -41,6 +41,12 @@ function isLoggedIn(req,res,next){
 //     .catch(e=>next(e))
 // });
 
+router.post('/facebook/login', 
+passport.authenticate('facebook-token'),
+ (req,res)=>{
+    res.json(req.user)
+})
+
 router.get('/logout', (req,res,next)=>{
     req.logout();
     res.send('cerrado ??? ');

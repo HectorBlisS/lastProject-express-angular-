@@ -4,6 +4,7 @@ const userSchema = new require('mongoose').Schema({
     username: String,
     photoURL: String,
     email: String,
+    facebookId:String,
     profile:{
         type: Schema.Types.ObjectId,
         ref: 'Profile'
